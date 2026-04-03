@@ -8,15 +8,15 @@ Senior Product Engineer & Architect specialized in High-Performance Browser Exte
 
 ### 🚀 The ConFluent Suite
 **Global communication, redefined.**
-- **[ConFluent Mac](https://github.com/GPT012/Traductor/tree/main/ConFluent_Mac)** : Multi-window AI companion (Electron). System-level Voice-to-Clipboard & transcription overlay.
-- **[ConFluent Chrome](https://github.com/GPT012/Traductor/tree/main/ConFluent_Chrome)** & **[Safari](https://github.com/GPT012/Traductor/tree/main/ConFluent_Safari)** : Instant Manifest V3 translation engines. Unified, zero-latency experience across all web platforms.
+- **[ConFluent Mac](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Mac)** : Multi-window AI companion (Electron). System-level Voice-to-Clipboard & transcription overlay.
+- **[ConFluent Chrome](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Chrome)** & **[Safari](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Safari)** : Instant Manifest V3 translation engines. Unified, zero-latency experience across all web platforms.
 
 ---
 
 ### 🏛️ Advanced Engineering Showcase
-- **[CoefRessources - CMS Prestige](https://github.com/GPT012/Traductor/tree/main/coef-modern)** : Enterprise-grade Ecosystem. Built with **Next.js 15**, **Supabase Auth**, and **PostgreSQL RLS** lockdown.
-- **[Autonomous Media Producer](https://github.com/GPT012/Traductor/tree/main/screenshot-to-video)** : Full-cycle media pipeline using **Python**, **MoviePy**, and **Tesseract OCR**. Automated short-form content generation.
-- **[Chess Analysis Engine](https://github.com/GPT012/Traductor/tree/main/Chess_Animations_Chrome)** : High-performance evaluation architecture leveraging local **Stockfish NNUE** and Cloud APIs for pedagogical move classification.
+- **[CoefRessources - CMS Prestige](https://github.com/GPT012/Engineering-Portfolio/tree/main/coef-modern)** : Enterprise-grade Ecosystem. Built with **Next.js 15**, **Supabase Auth**, and **PostgreSQL RLS** lockdown.
+- **[Autonomous Media Producer](https://github.com/GPT012/Engineering-Portfolio/tree/main/screenshot-to-video)** : Full-cycle media pipeline using **Python**, **MoviePy**, and **Tesseract OCR**. Automated short-form content generation.
+- **[Chess Analysis Engine](https://github.com/GPT012/Engineering-Portfolio/tree/main/Chess_Animations_Chrome)** : High-performance evaluation architecture leveraging local **Stockfish NNUE** and Cloud APIs for pedagogical move classification.
 
 ---
 
