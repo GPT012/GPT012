@@ -1,37 +1,19 @@
-# GPT012 | OS & Web Ecosystem Architect 🌍🎙️💻🧠
+# Salut, moi c'est 0xbaw 👋
 
-> **Bridging User Productivity and Autonomous Systems with High-Prestige Engineering.**
+Je construis des outils macOS et navigateur, de l'automatisation média par IA et des projets Web3 / sécurité.
 
-Senior Product Engineer & Architect specialized in High-Performance Browser Extensions, Native Desktop Utilities (macOS), and AI-Driven Media Automation. 
+## Projets
 
----
+- **[ConFluent](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Mac)** : compagnon IA multi-fenêtres (Electron), dictée vocale vers le presse-papiers et overlay de transcription. Versions [Chrome](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Chrome) et [Safari](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Safari) pour la traduction instantanée (Manifest V3).
+- **[CoefRessources](https://github.com/GPT012/Engineering-Portfolio/tree/main/coef-modern)** : CMS en Next.js 15 avec Supabase Auth et PostgreSQL RLS. [Démo](https://coef-modern.vercel.app).
+- **[Screenshot to Video](https://github.com/GPT012/Engineering-Portfolio/tree/main/screenshot-to-video)** : pipeline de génération de vidéos courtes (Python, MoviePy, Tesseract OCR).
+- **[Chess Analysis](https://github.com/GPT012/Engineering-Portfolio/tree/main/Chess_Animations_Chrome)** : analyse de coups avec Stockfish NNUE local et API cloud.
+- **[aisec-dataset](https://github.com/GPT012/aisec-dataset)** : dataset autour de la sécurité et de l'IA.
 
-### 🚀 The ConFluent Suite
-**Global communication, redefined.**
-- **[ConFluent Mac](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Mac)** : Multi-window AI companion (Electron). System-level Voice-to-Clipboard & transcription overlay.
-- **[ConFluent Chrome](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Chrome)** & **[Safari](https://github.com/GPT012/Engineering-Portfolio/tree/main/ConFluent_Safari)** : Instant Manifest V3 translation engines. Unified, zero-latency experience across all web platforms.
+## Stack
 
----
+`TypeScript` · `React / Next.js` · `Electron` · `Python` · `Solidity` · `PostgreSQL / Supabase`
 
-### 🏛️ Advanced Engineering Showcase
-- **[CoefRessources - CMS Prestige](https://github.com/GPT012/Engineering-Portfolio/tree/main/coef-modern)** : Enterprise-grade Ecosystem. Built with **Next.js 15**, **Supabase Auth**, and **PostgreSQL RLS** lockdown.
-- **[Autonomous Media Producer](https://github.com/GPT012/Engineering-Portfolio/tree/main/screenshot-to-video)** : Full-cycle media pipeline using **Python**, **MoviePy**, and **Tesseract OCR**. Automated short-form content generation.
-- **[Chess Analysis Engine](https://github.com/GPT012/Engineering-Portfolio/tree/main/Chess_Animations_Chrome)** : High-performance evaluation architecture leveraging local **Stockfish NNUE** and Cloud APIs for pedagogical move classification.
+## Contact
 
----
-
-### 🛠️ Strategic Tech Stack
-- **Core Architect** : Next.js 15, React 19, TypeScript, Framer Motion.
-- **System & Native** : Electron, Node-System Integration, Global Listeners, Swift-ready.
-- **Backend & Data** : PostgreSQL, Supabase RLS Lockdown, Zero Trust Auth.
-- **Automation** : Python MoviePy, OCR Engines, API Orchestration.
-
----
-
-### 📊 Vital Stats
-![GPT012's GitHub stats](https://github-readme-stats.vercel.app/api?username=GPT012&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117)
-
----
-
-### 📬 Let's Talk Strategy
-[LinkedIn](https://www.linkedin.com) • [Portfolio (Live CMS demo)](https://coef-modern.vercel.app)
+Ouvre une issue ou écris-moi via le lien sur mon profil.
