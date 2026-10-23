@@ -1,13 +1,12 @@
 # 0xGPT0
 
-Je construis un média crypto qui lit le marché par les sessions et les liquidations, et tous les outils qui vont avec : un indicateur TradingView, des backtests, un site d'analyse, un bot Telegram, une chaîne de publication automatique et des Shorts générés en code.
+Je construis un média crypto qui lit le marché par les sessions et les liquidations, et tous les outils qui vont avec : un indicateur TradingView, des backtests, un site d'analyse, une chaîne de création et de publication de contenu automatisée de bout en bout, et des Shorts générés en code.
 
 Chaque jour de semaine, BTC et Hyperliquid sont découpés en trois sessions (Asie, Londres, New York, heure de Paris). Les hauts et les bas de chaque session sont des zones de stops. Je mesure lesquels sont pris, par qui et en combien de temps, sur un an de données, et je publie les résultats avec leurs limites.
 
 | Où | |
 |---|---|
 | X | [@0xGPT0](https://x.com/0xGPT0) |
-| Telegram | [Crypto Review Daily](https://t.me/CryptoReviewDaily) |
 | Outils en ligne | [brief-crypto.vercel.app](https://brief-crypto.vercel.app) |
 | TradingView | OxGPT0 : indicateur public et un « Backtest du soir » chaque soir de semaine |
 | YouTube, TikTok | Shorts de la série « J'ai vérifié » |
@@ -51,26 +50,41 @@ HTML, CSS et JavaScript sans framework, fonctions serverless sur Vercel. Identit
 - **/timing** : simulateur complet (objectif, coupure, session, stop, sens, frais, impulsion), courbe du compte, liste des trades avec lien vers le graphique.
 - Filtres synchronisés avec l'adresse : chaque résultat se partage par lien. Bandeau BTC en direct avec la session en cours.
 
-## Bot Telegram et publication automatique
+## Création de contenu automatisée
 
-- Bot privé, point central du média : positions (Backpack, adresses EVM suivies), marché, watchlist, funding, niveaux, réglages stockés dans le message épinglé.
-- Chaque post proposé arrive avec ✅ Publier, 🕐 Programmer ou ❌ Ignorer. Publication par l'API officielle de X, client écrit à la main. Mode automatique activable depuis Telegram.
-- Les posts sont rangés en séries (Asie, New York, soir, éducation) et chaque nouveau post cite le précédent de sa série.
-- File de posts programmés dans Vercel Blob, publiée par GitHub Actions aux heures prévues.
-- Les workflows s'authentifient auprès de Vercel avec le jeton OIDC de GitHub : aucun secret partagé.
-- Rapport X chaque soir : posts classés par série, heure, longueur et clics sur le profil.
+Le média tourne par « rendez-vous » : des tâches programmées réveillent un agent IA (Claude) aux heures des sessions. Il lit les données fraîches, rédige, produit les visuels et prépare la publication. Je valide depuis mon téléphone, ou je laisse partir en automatique.
+
+| Quand (Paris) | Contenu produit |
+|---|---|
+| Lun à ven ~1h45 | État des lieux avant l'Asie : marchés financiers, niveaux de liquidité, stats du backtest, post X et 5 réponses prêtes à poster sous les gros comptes |
+| Lun à ven, ouvertures et clôtures | Asie, Londres, New York : niveaux pris, liquidité restante, graphique de la session |
+| Lun à ven ~19h43 | Backtest du soir : idée Éducation TradingView (titre, texte, image), post long sur X et lien de l'idée en réponse |
+| Lun à jeu ~23h12 | Review du soir : ce que chaque session a pris, marchés financiers et crypto |
+| Vendredi ~23h12 | Rapport complet de la semaine |
+| Samedi 11h43 | Post long pédagogique |
+| Dimanche 20h47 | Le week-end et la semaine qui arrive |
+
+Ce qui est automatisé à chaque rendez-vous :
+- **Données** : récupération des prix, des niveaux de session et des marchés financiers, aucun chiffre écrit sans source ni date.
+- **Rédaction** : l'agent écrit selon une charte éditoriale stricte (faits, niveaux et scénarios conditionnels, aucun avis sur la hausse ou la baisse), puis repasse chaque texte dans un filtre anti-style IA avant envoi.
+- **Visuels** : trois vues de graphique par actif générées en Python, une par usage, et des images de post aux formats de la charte.
+- **Publication** : chaque post arrive avec ✅ Publier, 🕐 Programmer ou ❌ Ignorer, ou part seul en mode automatique. Client de l'API X écrit à la main, séries de posts qui citent le précédent de leur série, file programmée dans Vercel Blob publiée par GitHub Actions.
+- **Recyclage** : quand l'idée TradingView est publiée, son lien suffit pour générer et publier le post X qui la présente.
+- **Mesure** : chaque post publié est enregistré ; un rapport nocturne classe les séries par heure, longueur, présence d'image et clics sur le profil. Un test par semaine, bilan le vendredi.
+- **Sécurité** : les workflows s'authentifient auprès de Vercel avec le jeton OIDC de GitHub, aucun secret partagé.
 
 ## Données de marché
 
 - GitHub Actions chaque nuit : Hyperliquid, Fear & Greed, marchés financiers (indices US, Europe, Asie, futures, VIX, taux à 10 ans, dollar, EUR/USD, USD/JPY, pétrole, or).
 - Graphiques 15 min générés en Python (matplotlib) dans le style de l'indicateur, avec une croix sur chaque stop pris.
-- Service local 24 h/24 (Node.js, WebSocket Binance) : alerte Telegram quand un haut ou un bas de session BTC est pris, suivi sur 15 minutes, enregistrement des liquidations Binance en CSV, tâche planifiée Windows.
+- Service local 24 h/24 (Node.js, WebSocket Binance) : alerte sur mobile quand un haut ou un bas de session BTC est pris, suivi sur 15 minutes, enregistrement des liquidations Binance en CSV, tâche planifiée Windows.
 
 ## Shorts « J'ai vérifié »
 
 - Vidéos verticales 1080×1920 écrites en React avec Remotion : idée reçue, backtest, barres animées, chiffre barré, preuve sur les vraies bougies du jour.
 - Voix de synthèse française hors ligne (Piper), musique générée en Python (numpy), mixage et normalisation avec ffmpeg.
-- Validation dans Telegram puis envoi sur YouTube (API Data v3) et en brouillon sur TikTok (Content Posting API).
+- Données injectées directement depuis les backtests et les bougies du jour : un nouveau Short se génère à partir d'un fichier de props.
+- Validation sur mobile puis envoi sur YouTube (API Data v3) et en brouillon sur TikTok (Content Posting API).
 - Charte graphique et modèles HTML (Short, miniature YouTube, image de post) rendus en PNG avec Playwright.
 
 ---
@@ -90,12 +104,12 @@ HTML, CSS et JavaScript sans framework, fonctions serverless sur Vercel. Identit
 | Langages | TypeScript, JavaScript, Python, Pine Script, Solidity, SQL |
 | Front | React, Next.js, Remotion, HTML et CSS sans framework, Tailwind, Framer Motion |
 | Back et données | Node.js, fonctions Vercel, Vercel Blob, Supabase, PostgreSQL, WebSocket |
-| Automatisation | GitHub Actions, OIDC, API X, Telegram, YouTube Data, TikTok, Binance, Hyperliquid |
+| Automatisation | Agents IA programmés (Claude), GitHub Actions, OIDC, API X, YouTube Data, TikTok, Binance, Hyperliquid |
 | Média | ffmpeg, Piper TTS, matplotlib, Playwright, MoviePy, Tesseract |
 | Desktop et navigateur | Electron, Manifest V3, Service Workers |
 
 ## Contact
 
-Un message sur [X](https://x.com/0xGPT0) ou sur le [canal Telegram](https://t.me/CryptoReviewDaily).
+Un message sur [X](https://x.com/0xGPT0).
 
 Pas un conseil financier. Les résultats passés d'un backtest ne disent rien de la suite.
