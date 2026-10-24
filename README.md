@@ -1,10 +1,10 @@
-# 0xGPT0 · IA & marchés
+# 0xGPT0 · Tech · IA · Marchés
 
-Développeur IA et automatisation. J'ai construit un média sur les marchés financiers qui tourne presque seul : des agents IA programmés lisent les données, écrivent, produisent les visuels, publient et mesurent les résultats. Je montre tout : le système, le code, les coûts et le ROI.
+Je construis des systèmes autonomes depuis des années et je les applique aux marchés financiers. Des agents qui lisent, écrivent, publient et mesurent ; des idées reçues testées sur des années de données ; des outils qui tournent sans moi.
 
-Le terrain de jeu, ce sont les marchés. Chaque jour de semaine, BTC et Hyperliquid sont découpés en trois sessions (Asie, Londres, New York, heure de Paris). Les hauts et les bas de chaque session sont des zones de stops. Je mesure lesquels sont pris, par qui et en combien de temps, sur un an de données, et je publie les résultats avec leurs limites.
+Trois choses m'occupent : faire tenir des machines qui travaillent seules, comprendre les marchés comme un ingénieur (on mesure, on ne prédit pas), et raconter ce que des années de code apprennent sur les deux.
 
-**Ce que je sais faire pour un projet :** automatiser un processus de bout en bout (collecte de données, agent IA qui rédige selon des règles, génération d'images et de vidéos, publication multi-plateforme, tableau de mesure), avec des secrets jamais exposés et des coûts suivis.
+Les projets ci-dessous sont des terrains d'application. Le détail des systèmes reste privé.
 
 | Où | |
 |---|---|
