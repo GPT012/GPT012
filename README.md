@@ -1,8 +1,10 @@
-# 0xGPT0
+# 0xGPT0 · IA & marchés
 
-Je construis un média crypto qui lit le marché par les sessions et les liquidations, et tous les outils qui vont avec : un indicateur TradingView, des backtests, un site d'analyse, une chaîne de création et de publication de contenu automatisée de bout en bout, et des Shorts générés en code.
+Développeur IA et automatisation. J'ai construit un média sur les marchés financiers qui tourne presque seul : des agents IA programmés lisent les données, écrivent, produisent les visuels, publient et mesurent les résultats. Je montre tout : le système, le code, les coûts et le ROI.
 
-Chaque jour de semaine, BTC et Hyperliquid sont découpés en trois sessions (Asie, Londres, New York, heure de Paris). Les hauts et les bas de chaque session sont des zones de stops. Je mesure lesquels sont pris, par qui et en combien de temps, sur un an de données, et je publie les résultats avec leurs limites.
+Le terrain de jeu, ce sont les marchés. Chaque jour de semaine, BTC et Hyperliquid sont découpés en trois sessions (Asie, Londres, New York, heure de Paris). Les hauts et les bas de chaque session sont des zones de stops. Je mesure lesquels sont pris, par qui et en combien de temps, sur un an de données, et je publie les résultats avec leurs limites.
+
+**Ce que je sais faire pour un projet :** automatiser un processus de bout en bout (collecte de données, agent IA qui rédige selon des règles, génération d'images et de vidéos, publication multi-plateforme, tableau de mesure), avec des secrets jamais exposés et des coûts suivis.
 
 | Où | |
 |---|---|
